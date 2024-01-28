@@ -30,6 +30,10 @@ struct ContentView: View {
         .tabItem {
           Label("SwiftData", systemImage: "square.stack.3d.down.right.fill")
         }
+      BookmarkDataView()
+        .tabItem {
+          Label("BookmarkData", systemImage: "info.circle")
+        }
     }
     .padding()
   }

@@ -24,6 +24,7 @@
 		2A7890D72B64E2AD00712082 /* CoreDataExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A7890D52B64E2AD00712082 /* CoreDataExample.xcdatamodeld */; };
 		2A7890D92B64E35F00712082 /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7890D82B64E35F00712082 /* PropertyList.swift */; };
 		2A7890DB2B64E37A00712082 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7890DA2B64E37A00712082 /* UserDefaults.swift */; };
+		2A7890DE2B662C4500712082 /* BookmarkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7890DD2B662C4500712082 /* BookmarkData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,8 @@
 		2A7890D62B64E2AD00712082 /* CoreDataExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataExample.xcdatamodel; sourceTree = "<group>"; };
 		2A7890D82B64E35F00712082 /* PropertyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
 		2A7890DA2B64E37A00712082 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		2A7890DD2B662C4500712082 /* BookmarkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkData.swift; sourceTree = "<group>"; };
+		2A7890DF2B6637D800712082 /* app-playgroundDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "app-playgroundDebug.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,18 +97,20 @@
 		2A78909D2B64E0C400712082 /* app-playground */ = {
 			isa = PBXGroup;
 			children = (
-				2A7890DA2B64E37A00712082 /* UserDefaults.swift */,
+				2A7890DF2B6637D800712082 /* app-playgroundDebug.entitlements */,
+				2A78909E2B64E0C400712082 /* app_playgroundApp.swift */,
 				2A7890BD2B64E16E00712082 /* Archiver.swift */,
+				2A7890DD2B662C4500712082 /* BookmarkData.swift */,
+				2A7890A02B64E0C400712082 /* ContentView.swift */,
 				2A7890B72B64E16E00712082 /* CoreData.swift */,
+				2A7890B52B64E14200712082 /* Person.swift */,
 				2A7890D82B64E35F00712082 /* PropertyList.swift */,
 				2A7890BC2B64E16E00712082 /* PersonEditorView.swift */,
 				2A7890BB2B64E16E00712082 /* PersonListView.swift */,
 				2A7890BE2B64E16E00712082 /* SQLite.swift */,
 				2A7890B82B64E16E00712082 /* SwiftData.swift */,
-				2A7890A02B64E0C400712082 /* ContentView.swift */,
-				2A7890B52B64E14200712082 /* Person.swift */,
+				2A7890DA2B64E37A00712082 /* UserDefaults.swift */,
 				2A7890D32B64E27200712082 /* Utils.swift */,
-				2A78909E2B64E0C400712082 /* app_playgroundApp.swift */,
 				2A7890A22B64E0C400712082 /* Assets.xcassets */,
 				2A7890A42B64E0C400712082 /* app_playground.entitlements */,
 				2A7890A52B64E0C400712082 /* Preview Content */,
@@ -201,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A7890A12B64E0C400712082 /* ContentView.swift in Sources */,
+				2A7890DE2B662C4500712082 /* BookmarkData.swift in Sources */,
 				2A7890C72B64E16E00712082 /* SQLite.swift in Sources */,
 				2A7890C12B64E16E00712082 /* SwiftData.swift in Sources */,
 				2A7890D72B64E2AD00712082 /* CoreDataExample.xcdatamodeld in Sources */,
@@ -338,10 +344,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "app-playground/app_playground.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "app-playground/app-playgroundDebug.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"app-playground/Preview Content\"";
+				DEVELOPMENT_TEAM = G7CXNQAM6X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -375,9 +383,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "app-playground/app_playground.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"app-playground/Preview Content\"";
+				DEVELOPMENT_TEAM = G7CXNQAM6X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
