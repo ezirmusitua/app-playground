@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct app_playgroundApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @StateObject private var dataController = DataController()
+  
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environment(\.managedObjectContext, dataController.container.viewContext)
+        .modelContainer(for: [PersonSD.self, AddressSD.self])
     }
+  }
 }

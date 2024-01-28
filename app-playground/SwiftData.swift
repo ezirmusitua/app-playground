@@ -36,8 +36,8 @@ class AddressSD {
 
 
 struct SwiftDataView: View {
-  @Query() var persons: [PersonSD]
   @Environment(\.modelContext) private var sdContext
+  @Query() var persons: [PersonSD]
   @State var person: PersonInput = PersonInput()
   
   var personsDisplay: [Person] {

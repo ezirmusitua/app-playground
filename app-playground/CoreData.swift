@@ -61,6 +61,27 @@ struct CoreDataView: View {
   }
 }
 
+class DataController: ObservableObject {
+  let container = NSPersistentContainer(name: "CoreDataExample")
+  init() {
+    container.loadPersistentStores { description, error in
+      if let error = error {
+        print("Core Data failed to load: \(error.localizedDescription)")
+      }
+    }
+  }
+}
+
+struct CoreDataPreview: View {
+  @StateObject private var dataController = DataController()
+  
+  var body: some View {
+    VStack {
+      CoreDataView()
+    }.environment(\.managedObjectContext, dataController.container.viewContext)
+  }
+}
+
 #Preview {
-  CoreDataView()
+  CoreDataPreview()
 }
