@@ -34,6 +34,11 @@ struct ContentView: View {
         .tabItem {
           Label("BookmarkData", systemImage: "info.circle")
         }
+      
+      HierarchicalListsView()
+        .tabItem {
+          Label("HierarchicalListView", systemImage: "info.circle")
+        }
     }
     .padding()
   }

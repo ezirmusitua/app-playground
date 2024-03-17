@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A581FF92B7DFE3800F3E751 /* HierarchicalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A581FF82B7DFE3800F3E751 /* HierarchicalListView.swift */; };
 		2A78909F2B64E0C400712082 /* app_playgroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A78909E2B64E0C400712082 /* app_playgroundApp.swift */; };
 		2A7890A12B64E0C400712082 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7890A02B64E0C400712082 /* ContentView.swift */; };
 		2A7890A32B64E0C400712082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7890A22B64E0C400712082 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A581FF82B7DFE3800F3E751 /* HierarchicalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalListView.swift; sourceTree = "<group>"; };
 		2A78909B2B64E0C400712082 /* app-playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A78909E2B64E0C400712082 /* app_playgroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_playgroundApp.swift; sourceTree = "<group>"; };
 		2A7890A02B64E0C400712082 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				2A7890DD2B662C4500712082 /* BookmarkData.swift */,
 				2A7890A02B64E0C400712082 /* ContentView.swift */,
 				2A7890B72B64E16E00712082 /* CoreData.swift */,
+				2A581FF82B7DFE3800F3E751 /* HierarchicalListView.swift */,
 				2A7890B52B64E14200712082 /* Person.swift */,
 				2A7890D82B64E35F00712082 /* PropertyList.swift */,
 				2A7890BC2B64E16E00712082 /* PersonEditorView.swift */,
@@ -207,6 +210,7 @@
 			files = (
 				2A7890A12B64E0C400712082 /* ContentView.swift in Sources */,
 				2A7890DE2B662C4500712082 /* BookmarkData.swift in Sources */,
+				2A581FF92B7DFE3800F3E751 /* HierarchicalListView.swift in Sources */,
 				2A7890C72B64E16E00712082 /* SQLite.swift in Sources */,
 				2A7890C12B64E16E00712082 /* SwiftData.swift in Sources */,
 				2A7890D72B64E2AD00712082 /* CoreDataExample.xcdatamodeld in Sources */,
